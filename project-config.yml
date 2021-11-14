@@ -1,0 +1,7 @@
+---
+config:
+  repo_type: dockerbasebuild
+  repo_name: imagen-prueba
+  author: Manuel Herrera Pulido
+  email: manuel.herrera.pulido@kyndryl.com
+  group_maintainers: DevOps
