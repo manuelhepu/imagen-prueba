@@ -1,16 +1,8 @@
-FROM ubuntu
+FROM alpine:3.14
 
 USER root
 
-RUN apt-get update
+RUN apk add --no-cache mysql-client
 
-RUN apt-get install -y python3.6 python3-pip unixodbc unixodbc-dev odbc-postgresql git
-
-RUN pip install pyodbc && \
-    pip install gitpython && \
-	pip install pandas && \
-	pip install pyyaml && \
-	pip install python-jenkins && \
-	pip install lxml
-
+ENTRYPOINT ["mysql"]
 
