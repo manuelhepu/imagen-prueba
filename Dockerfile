@@ -4,7 +4,7 @@ USER root
 
 RUN apt-get update
 
-RUN apt-get install  mysql  
+RUN apt-get -y install  docker  
 
 
 
