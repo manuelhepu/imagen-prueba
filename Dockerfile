@@ -1,8 +1,10 @@
-FROM alpine:3.6
+FROM ubuntu:21.10
 
 USER root
 
-RUN apk add --no-cache mysql-client
+RUN apt-get update
 
-ENTRYPOINT ["mysql"]
+RUN apt-get install -y mysql  
+
+
 
