@@ -1,7 +1,6 @@
-FROM ubuntu:21.10
-
-USER root
-
+FROM alpine:3.12
+RUN apk add --no-cache mysql-client
+ENTRYPOINT ["mysql"]
 
 
 
